@@ -1,0 +1,53 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <com.devomb.animatedsortingordericon.AnimatedSortingOrderIcon
+        android:id="@+id/icon1"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_margin="20dp"
+        app:bars="4"
+        app:barIncrement="0.2"
+        app:barCornerRadius="1.2"
+        app:barSpacing="0.5"
+        app:barColor="#999999"/>
+
+    <com.devomb.animatedsortingordericon.AnimatedSortingOrderIcon
+        android:id="@+id/icon3"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_toRightOf="@id/icon1"
+        android:layout_margin="50dp"
+        app:bars="3"
+        app:barIncrement="0.3"
+        app:barCornerRadius="10"
+        app:barSpacing="0.7"
+        app:barColor="#333333"
+        app:order="descending"/>
+
+    <com.devomb.animatedsortingordericon.AnimatedSortingOrderIcon
+        android:id="@+id/icon2"
+        android:layout_width="249dp"
+        android:layout_height="249dp"
+        android:layout_below="@id/icon3"
+        android:layout_marginLeft="60dp"
+        app:bars="10"
+        app:barIncrement="0.1"
+        app:barCornerRadius="3"
+        app:barSpacing="0.2"
+        app:barColor="#666666"
+        app:animationLength="1000" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:text="Press the icons to see them transform!" />
+
+</RelativeLayout>

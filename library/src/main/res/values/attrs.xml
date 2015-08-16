@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="AnimatedSortingOrderIcon">
+        <attr name="bars" format="integer" />
+        <attr name="barIncrement" format="float" />
+        <attr name="barSpacing" format="float" />
+        <attr name="barOffset" format="float" />
+        <attr name="barColor" format="color"/>
+        <attr name="barCornerRadius" format="float" />
+        <attr name="animationLength" format="integer" />
+        <attr name="order" format="enum">
+            <enum name="ascending" value="0" />
+            <enum name="descending" value="1" />
+        </attr>
+    </declare-styleable>
+</resources>
